@@ -1,0 +1,11 @@
+<div>
+    <div *ngIf="timerStatus && secondsLeft <= 0">
+        Timer is ready!
+    </div>
+    <div *ngIf="timerStatus && secondsLeft > 0">
+        Seconds left to deadline: {{ secondsLeft }}
+    </div>
+    <div *ngIf="!timerStatus && secondsLeft <= 0">
+        Deadline reached!
+    </div>
+</div>

@@ -10,8 +10,8 @@ app.use(cors());
 const PORT = process.env.port || 3000;
 
 
-//Set a fixed deadline (e.g., 1 hour from server start)
-const defaultDeadline = new Date(Date.now() + 60 * 60 * 1000);
+//Set a fixed deadline (e.g., 1 minute from server start)
+const defaultDeadline = new Date(Date.now() + 1 * 60 * 1000);
 
 app.get('/api/deadline', (req, res) => {
     const now = new Date();
